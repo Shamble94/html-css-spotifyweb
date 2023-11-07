@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify Web App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Montserrat:wght@100&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -11,33 +14,46 @@
         <div id="top">
             <div class="top-content">
                 <div id="sidebar">
-                    <img src="./img/logo.svg" class="logo" alt="">
-                    <ul class="margin-top-bot gap">
-                        <li><img src="./img/home.svg" class="icona" alt=""> <span> Home</span></li>
-                        <li ><img src="./img/search.svg" class="icona" alt=""> <span> Cerca</span></li>
-                        <li ><img src="./img/libreria.svg" class="icona" alt=""> <span> Libreria</span></li>
-                    </ul>
-                    <div class="margin-top-bot text-color-white">PLAYLIST</div>
-                    <div class="margin-top-bot"><i class="fa-regular fa-square-plus "></i> Crea Playlist</div>
-                    <ul class="margin-top-bot gap">
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                    </ul>
-                    <div class="margin-top-bot">Installa app</div>
-                    <hr class="margin-top-bot">
-                    <img src="./img/profile.svg" class="icona sfondo margin-top-bot" alt=""><span>Jhon Doe</span>
+                    <div >
+                        <div class="hide"><img src="./img/logo.svg" class="logo" alt=""></div>
+                        <div class="show"><img src="./img/logo-small.svg"  class="icona-mobile logo"></div>
+                        <ul class="margin-top-bot  line-height">
+                            <li >  <div class="hide"><img src="./img/home.svg" class="icona"  alt=""> <span class="margin"> Home</span></div>
+                                <img src="./img/home.svg" class=" icona-mobile show "  alt=""> </li>
 
+                            <li><div class="hide"><img src="./img/search.svg" class="icona"  alt=""> <span class="margin"> Cerca</span></div>
+                                <img src="./img/search.svg" class=" icona-mobile show "  alt=""> </li></li>
+
+                            <li><div class="hide"><img src="./img/libreria.svg" class="icona" alt=""> <span class="margin">  Libreria</span></div>
+                                <img src="./img/libreria.svg" class=" icona-mobile show "  alt=""> </li>
+                        </ul>
+                        <div class="hide">
+                            <div class="margin-top-bot text-color-white"><h5>PLAYLIST</h5></div>
+                            <div class="margin-top-bot"><i class="fa-regular fa-square-plus a "></i> <span>Crea Playlist</span></div>
+                            <ul class="margin-top-bot line-height">
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                            </ul>
+                        </div>
+                        <div class="fondosidebar">
+                            <div class="margin-top-bot circle" ><i class="fa-regular fa-circle-down "></i><span class="hide margin-top-bot">Installa app</span></div>
+                            <hr class="margin-top-bot">
+                            <div class="margin-top-bot justify-end">
+                                <img src="./img/profile.svg" class=" sfondo a" alt=""><span class="hide text-color-white margin ">Jhon Doe</span>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div id="content">
                     <header>
                         <button class="btnUP">EFFETTUA L'UPGRADE</button>
                     </header>
-                    <div class="main-content">
                         <div class="container">
                             <div class="row"> 
                                 <div class="col-100">
@@ -55,7 +71,7 @@
                             <div class="row">            
                                 <div class="col-16">
                                     <img src="./img/metal_lifting.jpg" alt="">
-                                    <div class ="sottotesto">Heavt Metal</div>
+                                    <div class ="sottotesto">Heavy Metal</div>
                                     <div class ="sottotesto font-size-12"> Subtitle</div>
                                 </div>
                                 <div class="col-16">
@@ -124,7 +140,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+       
         <div id="bottom"></div>
     </body>
 </html>
