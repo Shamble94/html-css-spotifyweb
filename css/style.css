@@ -288,6 +288,7 @@ li{
         font-size: ;
     }
 }
+
 /* MEDIA S */
 @media screen  and  (min-width:486px) and (max-width: 610px) {
     .col-16{
@@ -307,12 +308,7 @@ li{
    .timebar2:hover {
     background-color: green;
 }
-    .col.40{
-        width: calc(100% / 3 - 20px);
-    }
-    .col.20{
-        width: calc(100% / 3 - 20px);
-    }
+
     .font-size-25{
         font-size: 20px
     }
