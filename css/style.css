@@ -7,10 +7,10 @@ body{
     font-family:Arial, Helvetica, sans-serif
 }
 #top{
-    height:calc(100vh - 60px);
+    height:calc(100vh - 80px);
 }
 #bottom{
-    height: 60px;
+    height: 80px;
     background-color: #282828;
     position: fixed;
     z-index: 1;
@@ -25,6 +25,31 @@ body{
     flex-direction: column;
     justify-content: space-between;
     
+}
+.circle{
+    font-size: 15px;
+}
+.play {
+    font-size:30px;
+}
+.d-flex{
+    display:flex;
+    justify-content: center;
+    gap: 20px
+}
+.margin-left{
+    margin-left: 60px;
+}
+.imgfooter{
+    width: 35px;
+    float: left
+}
+.heart{
+    margin-left: 30px;
+    vertical-align: middle
+}
+.folder{
+    margin-left: 10px;
 }
 #content{
     width: calc(100vw - 200px);
@@ -83,13 +108,14 @@ header{
     margin: 10px;
     
 }
-.col-25{
-    width: calc(100% / 4 - 20px);
+.col-20{
+    width: calc(100% / 5 - 20px);
     margin: 10px;
+    padding: 5px
 }
 
-.col-50{
-    width: calc(100% / 2 - 20px);
+.col-60{
+    width: calc(60% - 20px);
     margin: 10px
 }
 .row{
@@ -209,6 +235,10 @@ li{
 .top-sidebar{
     width: 100%;
 }
+.justify-center{
+    vertical-align: center;
+}
+@media screen and (min-width: 769px){
 
 @media screen  and  (min-width:300px) and (max-width: 768px){
     .col-16{
@@ -243,7 +273,9 @@ li{
     display: flex;
     justify-content: center;
    }
-   
+   .d-flex{
+    gap:10px
+   }
    
 
 
