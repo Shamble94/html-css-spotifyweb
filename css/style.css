@@ -254,6 +254,9 @@ li{
 .font-size-25{
     font-size: 25px;
 }
+.font-size-40{
+    font-size: 40px;
+}
 .timebar{
     height: 5px;
     width: 50%;
@@ -272,6 +275,7 @@ li{
 .timebar2:hover {
     background-color: green;
 }
+
 /* MEDIA L */
 @media screen and (min-width:611px) and (max-width:810px){
     .col-16{
@@ -310,6 +314,9 @@ li{
     }
     .font-size-25{
         font-size: 20px
+    }
+    .font-size-40{
+        font-size: 30px;
     }
     .header{
         width: 100%;
