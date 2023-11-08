@@ -284,6 +284,9 @@ li{
     .row{
         flex-wrap: wrap;
     }
+    .AAA{
+        font-size: ;
+    }
 }
 /* MEDIA S */
 @media screen  and  (min-width:486px) and (max-width: 610px) {
@@ -298,8 +301,6 @@ li{
         flex-wrap: wrap;
     }
     
-  
-   
    .d-flex{
     gap:10px
    }
@@ -315,11 +316,12 @@ li{
     .font-size-25{
         font-size: 20px
     }
-    .font-size-40{
-        font-size: 30px;
-    }
+   
     .header{
         width: 100%;
+    }
+    .AAA{
+        font-size: 15px
     }
 }
 
@@ -363,16 +365,14 @@ li{
    .d-flex{
     gap:10px
    }
+   .font-size-25{
+    font-size: 20px
+}
+  
+    .AAA{
+        font-size: 12px
+    }
    
-    .col.40{
-        width: calc(100% / 3 - 20px);
-    }
-    .col.20{
-        width: calc(100% / 3 - 20px);
-    }
-    .font-size-25{
-        font-size: 20px
-    }
 }
    
 
