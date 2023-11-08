@@ -307,7 +307,7 @@ li{
    }
    .timebar2:hover {
     background-color: green;
-}
+    }
 
     .font-size-25{
         font-size: 20px
@@ -354,13 +354,16 @@ li{
     .circle{
         text-align: center;
     }
+
    .justify-end{
     display: flex;
     justify-content: center;
-   }
+    }
+
    .d-flex{
     gap:10px
    }
+
    .font-size-25{
     font-size: 20px
 }
