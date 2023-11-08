@@ -47,7 +47,8 @@ body{
 }
 .heart{
     margin-left: 30px;
-    vertical-align: middle
+    vertical-align: middle;
+    color:red
 }
 .folder{
     margin-left: 10px;
@@ -61,10 +62,11 @@ body{
     height: 30vh;
     overflow-y: auto;
 }
-
+.border-radius{
+    border-radius: 50%
+}
 .album{
     position: relative;
-    height: 100%;
     width: 100%;
     display: block
 }
@@ -199,6 +201,9 @@ h3{
     color: #717479;
     float: left;
     
+}
+.text-color-grey{
+    color: #717479;
 }
 
 .text-color-white{
