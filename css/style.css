@@ -12,26 +12,34 @@ body{
 #bottom{
     height: 60px;
     background-color: #282828;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
 #sidebar{
     width: 200px;
     background-color: #000000;
     color: #717479;
     font-weight: 700;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 #content{
     width: calc(100vw - 200px);
     background-color: #141922;
     overflow-y: auto;
 }
+.playlist{
+    height: 30vh;
+    overflow-y: auto;
+}
 header{
-    position: fixed;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     height: 60px;
-   
-    
+    position: fixed
 }
 .container{
     width: 100%;
@@ -49,6 +57,15 @@ header{
     margin: 10px;
     
 }
+.col-25{
+    width: calc(100% / 4 - 20px);
+    margin: 10px;
+}
+
+.col-50{
+    width: calc(100% / 2 - 20px);
+    margin: 10px
+}
 .row{
     display: flex;
     width: 100%;
@@ -63,8 +80,15 @@ header{
     border-radius: 30px;
     background-color: rgba(0,0,0,0.5);
     color: white;
-
     
+
+/* EFFETTI HOVER */
+}
+li:hover{
+    color:white
+}
+span:hover{
+    color:white
 }
 
 img{
@@ -146,9 +170,8 @@ li{
     text-align:center;
 }
 .fondosidebar{
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    
 }
 .a{
     vertical-align: middle;
@@ -156,7 +179,9 @@ li{
     width: 30px;
     
 }
-
+.top-sidebar{
+    width: 100%;
+}
 
 @media screen  and  (min-width:300px) and (max-width: 768px){
     .col-16{
@@ -191,6 +216,8 @@ li{
     display: flex;
     justify-content: center;
    }
+   
+   
 
 
 /* @media screen and (min-height: 300px) {
