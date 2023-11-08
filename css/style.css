@@ -87,11 +87,15 @@ body{
     align-items: center;
 }
 header{
-    width: 100%;
+    width: calc(100% - 200px);
     background-color: rgba(0,0,0,0.5);
     height: 60px;
     position: fixed;
     z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+      
 }
 .container{
     width: 100%;
@@ -246,18 +250,71 @@ li{
     font-size: 25px;
 }
 .timebar{
-    height: 3px;
+    height: 5px;
     width: 50%;
     border-radius: 20%;
     background-color: #b3b3b3;
     margin: 0 5px;
     
 }
-@media screen and (min-width: 769px){
+.timebar2{
+    height: 5px;
+    width: 30%;
+    border-radius: 20%;
+    background-color: #fff;
 
-@media screen  and  (min-width:300px) and (max-width: 768px){
+}
+.timebar2:hover {
+    background-color: green;
+}
+/* MEDIA L */
+@media screen and (min-width:611px) and (max-width:810px){
     .col-16{
-        width: calc(100% / 2 - 20px);
+        width: calc(100% / 4 - 20px)
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+}
+/* MEDIA S */
+@media screen  and  (min-width:485px) and (max-width: 610px) {
+    .col-16{
+        width:calc(100% / 2 - 20px);
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+    
+    .ul-nav{
+        flex-wrap: wrap;
+    }
+    
+    
+   
+   .d-flex{
+    gap:10px
+   }
+   .timebar2:hover {
+    background-color: green;
+}
+    .col.40{
+        width: calc(100% / 3 - 20px);
+    }
+    .col.20{
+        width: calc(100% / 3 - 20px);
+    }
+    .font-size-25{
+        font-size: 20px
+    }
+    .header{
+        width: 100%;
+    }
+}
+
+/* MEDIA XS */
+@media screen  and  (max-width:485px) {
+    .col-16{
+        width:calc(100% / 2 - 20px);
     }
     .row{
         flex-wrap: wrap;
@@ -291,18 +348,25 @@ li{
    .d-flex{
     gap:10px
    }
+   .timebar2:hover {
+    background-color: green;
+}
+    .col.40{
+        width: calc(100% / 3 - 20px);
+    }
+    .col.20{
+        width: calc(100% / 3 - 20px);
+    }
+    .font-size-25{
+        font-size: 20px
+    }
+    .header{
+        width: 100%;
+    }
+}
+}
    
 
 
-/* @media screen and (min-height: 300px) {
-    .fondosidebar{
-        position: relative
-    }
-    #bottom{
-        z-index: 1;
-        position: relative;
-    } */
-    
-}
 
     
