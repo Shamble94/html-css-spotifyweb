@@ -59,8 +59,8 @@ body{
 .heart{
     margin-left: 30px;
     vertical-align: middle;
-    color:red
 }
+
 .folder{
     margin-left: 10px;
 }
@@ -327,6 +327,16 @@ li{
     .row{
         flex-wrap: wrap;
     }
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .heart{
+        margin-left: 10px;
+    }
+    .folder{
+        margin-left;: 10px
+    }
 }
 
 /* MEDIA S */
@@ -356,9 +366,20 @@ li{
     .header{
         width: 100%;
     }
-    .AAA{
+    .testo-rimpicciolito{
         font-size: 15px
     }
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .heart{
+        margin: 0px;
+    }
+    .folder{
+        margin:0px
+    }
+
 }
 
 /* MEDIA XS */
@@ -408,7 +429,7 @@ li{
     font-size: 20px
 }
   
-    .AAA{
+    .testo-rimpicciolito{
         font-size: 12px
     }
   /*  .lista-hide{
