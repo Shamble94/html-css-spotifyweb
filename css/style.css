@@ -22,6 +22,13 @@ body{
     width: 100%;
 }
 
+/* ID CONTENT */
+#content{
+    width: calc(100vw - 200px);
+    background-color: #141922;
+    overflow-y: auto;
+}
+
 /* ID SIDEBAR */
 #sidebar{
     width: 200px;
@@ -31,15 +38,46 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow-y:hidden
-    
+    overflow-y:hidden   
 }
+
+/* TAG HEADER */
+header{
+    width: calc(100% - 200px);
+    background-color: rgba(0,0,0,0.5);
+    height: 60px;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+}
+
+/* CONTAINER */
+.container{
+    width: 100%;
+    margin-top: 60px
+}
+
+/* TOP CONTENT */
+.top-content{
+    display: flex;;
+    height: 100%;
+}
+
+/* DIMENSIONI */
 .circle{
     font-size: 15px;
 }
 .play {
     font-size:30px;
 }
+.heart{
+    margin-left: 30px;
+    vertical-align: middle;
+}
+
+/* ATTRIBUZIONE FLEX */
 .d-flex{
     display:flex;
     justify-content: center;
@@ -52,34 +90,34 @@ body{
     gap: 5px
 }
 
+/* IMMAGINE FOOTER */
 .imgfooter{
-    width: 50px;
-    
-}
-.heart{
-    margin-left: 30px;
-    vertical-align: middle;
+    width: 50px;    
 }
 
+/* MARGINE ICONA FOLDER */
 .folder{
     margin-left: 10px;
 }
-#content{
-    width: calc(100vw - 200px);
-    background-color: #141922;
-    overflow-y: auto;
-}
+
+/* DIMENSIONE LISTA PLAYLIST */
 .playlist{
     height: 30vh;
     overflow-y: auto;
 }
+
+/* BORDER RADIUS */
 .border-radius{
     border-radius: 50%
 }
+
+/* COVER ALBUM */
 .album{
     position: relative;
     width: 100%;
 }
+
+/* OVERLAY ALBUM IN HOVER */
 .overlay{
     position: absolute;
     width: 100%;
@@ -90,36 +128,10 @@ body{
     display:none;
     
 }
-.album:hover .overlay{
-    display: block;
-    left: 0;
-    top: 0;
-    display:flex;
-    justify-content:center;
-    align-items: center;
-}
-header{
-    width: calc(100% - 200px);
-    background-color: rgba(0,0,0,0.5);
-    height: 60px;
-    position: fixed;
-    z-index: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-      
-}
-.container{
-    width: 100%;
-    margin-top: 60px
-}
-.top-content{
-    display: flex;;
-    height: 100%;
-}
-.col-100{
-    width: 100%;
-}
+
+
+/* DIMENSIONI COLONNE */
+
 .col-16{
     width: calc(100% / 6 - 20px);
     margin: 10px;
@@ -135,6 +147,11 @@ header{
     width: calc(40% - 20px);
     margin: 10px
 }
+.col-100{
+    width: 100%;
+}
+
+/* ROW FLEX E ROW NO FLEX */
 .row{
     display: flex;
     width: 100%;
@@ -142,31 +159,66 @@ header{
 .row-noflex{
     width: 100%;
 }
-.margin-top
-{
-    margin-top: 30px
+
+/* MARGINI */
+.margin-top{
+  margin-top: 30px
 }
 
+.margin-top-bot{
+    margin: 10px;
+}
+
+.margin-left{
+    margin-left: 10px;
+}
+
+/* STILE BOTTONE UPGRADE */
 .btnUP{
     padding: 10px;
     border-radius: 30px;
     background-color: rgba(0,0,0,0.5);
     color: white;
-    
-    
+}
 
 /* EFFETTI HOVER */
-}
 li:hover{
     color:white
 }
 span:hover{
     color:white
 }
+.album:hover .overlay{
+    display: block;
+    left: 0;
+    top: 0;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.elapsed-time-bar:hover {
+    background-color: green;
+}
+.timebar:hover .elapsed-time-circle{
+    display: block;
+}
+.text-decoration:hover{
+    text-decoration: underline;
+}
 
+/* GRANDEZZA IMMAGINI */
 img{
     width: 100%;
 }
+.imgtonda{
+    border-radius: 50%;
+}
+.logo{
+    width: 70%;
+    margin: 10px;
+}
+
+/* LISTA NAV */
 .ul-nav{
     display: flex;
     gap: 10px;
@@ -177,42 +229,20 @@ img{
     font-size: 10px;
     font-weight: 700;
 }
-.margin-top-bot{
-    margin: 10px;
-}
+
+/* STILE TESTO */
 h3{
     color: #fff;
-
 }
 .sottotesto{
     text-align: center;
     color: white;
     margin-top: 10px;
-    
 }
 .testopiccolo{
     margin: 10px;
     font-size: 12px;
     color: #717479
-}
-
-.imgtonda{
-    border-radius: 50%;
-    
-}
-.logo{
-    width: 70%;
-    margin: 10px;
-}
-.font-size-12{
-    font-size: 12px;
-    color: #717479
-}
-.icona{
-    width: 15%;
-    color: #717479;
-    float: left;
-    
 }
 .text-color-grey{
     color: #717479;
@@ -221,9 +251,40 @@ h3{
 .text-color-white{
     color: #fff;
 }
+.text-align{
+    text-align:center;
+}
+
+/* GRANDEZZA TESTO */
+.font-size-12{
+    font-size: 12px;
+    color: #717479
+}
+.font-size-25{
+    font-size: 25px;
+}
+.font-size-40{
+    font-size: 40px;
+}
+
+/* STILE ICONE */
+.icona{
+    width: 15%;
+    color: #717479;
+    float: left; 
+}
+.icona-piu{
+    vertical-align: middle;
+    font-size: 30px;
+    width: 30px;
+}
+
+/* STILE LISTA */
 li{
     list-style: none;
 }
+
+/* ALTEZZA LINEA E SPAZIAMENTO */
 .line-height{
     line-height: 30px;
 }
@@ -231,6 +292,7 @@ li{
     gap:10px;   
 }
 
+/* LINEA SOTTO LA PAROLA "IN EVIDENZA" OVVERO FIRST CHILD DELLA UL-NAV */
 .ul-nav li:first-child::after {
     display:block;
     content : "";
@@ -241,47 +303,35 @@ li{
     margin-top:2px;
 }
 
+/* BORDO ALLA ICONA HOME NELLA SIDEBAR */
 .border-right{
     border-left: 2px solid #a7f62e;
     
 }
-.margin{
-    margin-left: 10px;
-}
+/* COLORE SFONDO */
 .sfondo{
     background-color: #717479;
     border-radius: 50%;
 }
+
+/* CLASSE DA NASCONDERE */
 .show{
     display: none;
     text-align: center;
-    margin-top: 10px;
-    
+    margin-top: 10px;  
 }
-.text-align{
-    text-align:center;
-}
+
+/* OVERFLOW DEL FONDO SIDEBAR */
 .fondosidebar{
     overflow-y: hidden;
 }
-.a{
-    vertical-align: middle;
-    font-size: 30px;
-    width: 30px;
-    
-}
+
+/* DIMENSIONE PARTE SUPERIORE SIDEBAR */
 .top-sidebar{
     width: 100%;
 }
-.justify-center{
-    vertical-align: center;
-}
-.font-size-25{
-    font-size: 25px;
-}
-.font-size-40{
-    font-size: 40px;
-}
+
+/* STILE BARRA TEMPO */
 .timebar{
     height: 5px;
     width: 50%;
@@ -309,18 +359,13 @@ li{
     display: none
 
 }
-.elapsed-time-bar:hover {
-    background-color: green;
-}
-.timebar:hover .elapsed-time-circle{
-    display: block;
-}
-.text-decoration:hover{
-    text-decoration: underline;
-}
 
-/* MEDIA L */
+
+/******************************
+            MEDIA L 
+ ******************************/
 @media screen and (min-width:611px) and (max-width:991px){
+    
     .col-16{
         width: calc(100% / 4 - 20px)
     }
@@ -335,12 +380,15 @@ li{
         margin-left: 10px;
     }
     .folder{
-        margin-left;: 10px
+        margin-left: 10px;
     }
 }
 
-/* MEDIA S */
+/******************************
+            MEDIA S 
+ ******************************/
 @media screen  and  (min-width:486px) and (max-width: 610px) {
+    
     .col-16{
         width:calc(100% / 2 - 20px);
     }
@@ -352,11 +400,11 @@ li{
         flex-wrap: wrap;
     }
     
-   .d-flex{
-    gap:10px
-   }
-   .timebar2:hover {
-    background-color: green;
+    .d-flex{
+        gap:10px
+    }
+    .timebar2:hover {
+        background-color: green;
     }
 
     .font-size-25{
@@ -382,7 +430,9 @@ li{
 
 }
 
-/* MEDIA XS */
+/******************************
+            MEDIA XL 
+ ******************************/
 @media screen  and  (max-width:485px) {
     .col-16{
         width:calc(100% / 2 - 20px);
@@ -417,25 +467,23 @@ li{
     }
 
    .justify-end{
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
     }
 
    .d-flex{
-    gap:10px
-   }
+        gap:10px
+    }
 
    .font-size-25{
-    font-size: 20px
-}
+        font-size: 20px
+    }
   
     .testo-rimpicciolito{
         font-size: 12px
-    }
-  /*  .lista-hide{
-    display: none;
-   }
-} */
+}
+}
+  
    
 
 
